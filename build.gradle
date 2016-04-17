@@ -1,0 +1,21 @@
+group 'io.resourcepool'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'net.arnx:jsonic:1.3.10',
+          'org.slf4j:slf4j-api:1.7.18'
+  testCompile 'junit:junit:4.12'
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.12'
+}
+
